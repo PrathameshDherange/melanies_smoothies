@@ -13,7 +13,7 @@ st.write(
 # Get the current credentials
 # session = get_active_session()
 
-cnx = st.connection("snowflake")
+cnx = st.connection("my_connection", type="snowflake")
 session = cnx.session()
 
 name_on_order = st.text_input('Name on Smoothie:')
